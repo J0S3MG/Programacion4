@@ -4,9 +4,18 @@
     height: 100vh;
     margin: 0;
 }
-.contenedor{
+.contenedor
+{
     font-family:Georgia, 'Times New Roman', Times, serif;
     background-color: rgba(0, 0, 0, 0.3); /* Fondo negro con 60% de opacidad */
+    margin: 20px;          /* Espacio alrededor de la caja */
+    padding: 15px;         /* Espacio interno, para que el texto no se pegue al borde */
+    border-radius: 20px;   /* Opcional: suaviza las esquinas */
+}
+.contenedor2
+{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 60% de opacidad */
     margin: 20px;          /* Espacio alrededor de la caja */
     padding: 15px;         /* Espacio interno, para que el texto no se pegue al borde */
     border-radius: 20px;   /* Opcional: suaviza las esquinas */
