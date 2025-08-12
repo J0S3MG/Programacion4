@@ -1,3 +1,53 @@
-.ejemplo_estilo{
-    color: chocolate;
+.cuerpo 
+{
+    background: url(img/cocina.jpg) center/cover no-repeat fixed;
+    height: 100vh;
+    margin: 0;
+}
+.contenedor{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo negro con 60% de opacidad */
+    margin: 20px;          /* Espacio alrededor de la caja */
+    padding: 15px;         /* Espacio interno, para que el texto no se pegue al borde */
+    border-radius: 20px;   /* Opcional: suaviza las esquinas */
+}
+.contenedor-centrado
+{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente (opcional) */
+   
+}
+.enlace
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #f9f9f9;
+}
+.imagen-receta 
+{
+  width: 300px;/* Define un ancho y alto fijos para todas las imágenes con esta clase */
+  height: 200px;
+  object-fit: cover;/* Rellena el espacio sin deformar la imagen, recortando si es necesario */
+  object-position: center;/* Opcional: Centra la imagen dentro de su marco */
+}
+.titulo
+{
+    color:aqua;
+    text-align: center;
+    font-size: 50px;
+}
+.subtitulo
+{
+    text-decoration: underline;
+    color: aquamarine;
+}
+.texto
+{
+    color: rgb(255, 255, 255);
+}
+.tabla
+{
+    color: rgb(255, 255, 255);
+    border-collapse: collapse; /* Unifica los bordes de la tabla y las celdas */
+    width: 100%; /* Opcional: ajusta el ancho de la tabla */
 }
