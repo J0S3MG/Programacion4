@@ -1,63 +1,69 @@
 <!DOCTYPE html>
 <html> 
     <head>
-
-    </head>
-    <body>
-        <form id="myForm">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre"/>
-            <br>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email"/>
-            <br>
-            <br>
-            <label for="msj">Mensaje:</label>
-            <textarea id="msj" rows="4" cols="58"></textarea>
-            <br>
-            <br>
-            <label for="test">Test</label>
-            <input type="range" id="test" min="0" max="120" value="60">
-            <br>
-            <br>
-            <label for="fecha">Fecha:</label>
-            <input type="date" id="fecha">
-            <br>
-            <br>
-            <label for="hora">Hora:</label>
-            <input type="time" id="hora">
-            <br>
-            <br>
-            <label for="mes">Mes</label>
-            <input type="month" id="mes">
-            <br>
-            <br>
-            <label for="week">Semana:</label>
-            <input type="week" id="week">
-            <br>
-            <br>
-            <label for="masc">Masculino</label>
-            <input type="radio" name="genero" id="masc" value="masc">
-            <label for="fem">Femenino</label>
-            <input type="radio" name="genero" id="fem" value="fem">
-            <br>
-            <br>
-            <select name="country" multiple>
-                <option value="">select a country</option>
-                <option value="arg">Argentina</option>
-                <option value="br">Brasil</option>
-            </select>
-            <input type="button" value="Click Me" onclick="alert('El que me lee es gay')">
-            <input type="submit">
-        </form>
-        <script>
-            document.getElementById("myForm").addEventListener("submit", function(event)
+        <link rel="stylesheet" href="../styles.css"/>
+        <style>
+            form 
             {
-                event.preventDefault();
-                const name = document.getElementById("nombre").value;
-                alert("Abduzcan" + name);
-            });
-        </script>
+                display: flex;
+                flex-direction: column; /* Organiza los "form-row" en una columna */
+                gap: 15px; /* Espacio entre las "filas" (grupos de elementos y botones) */
+                align-items: flex-start; /* Alinea los elementos al inicio (izquierda) */
+            }
+        </style>
+    </head>
+    <body class="cuerpo2">
+        <div class="contenedor2">
+            <h1 class="titulo">Picadita</h1>
+            <form id="myForm" class="texto">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="desc">Descripcion:</label>
+                        <input type="text" id="desc"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="test">Valoraciones</label>
+                        <input type="range" id="test" min="0" max="120" value="60">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="ing">Ingredientes:</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="ing" id="jamon">
+                        <label for="jamon">Jamon</label>
+                        <input type="checkbox" name="ing" id="queso">
+                        <label for="queso">Queso</label>
+                        <input type="checkbox" name="ing" id="mor">
+                        <label for="mor">Morcilla</label>
+                        <input type="checkbox" name="ing" id="ac">
+                        <label for="ac">Aceituna</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="prep">Preparacion:</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="perp" rows="4" cols="58"></textarea>
+                    </div>
+                </div>
+                <div class="form-row form-buttoms">
+                    <input type="button" value="Click Me" onclick="alert('El que me lee es gay')">
+                    <input type="submit">
+                    <a href="../index.html" class="enlace">Volver al Inicio</a>
+                    <a href="tabla.html" class="enlace">Lista de Recetas</a>
+                </div>
+            </form>
+            <script>
+                document.getElementById("myForm").addEventListener("submit", function(event)
+                {
+                    event.preventDefault();
+                    const name = document.getElementById("desc").value;
+                    alert("Abduzcan" + name);
+                });
+            </script>
+        </div>
     </body>
 </html>

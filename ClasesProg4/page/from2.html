@@ -1,0 +1,60 @@
+<body class="cuerpo2">
+        <div class="contenedor2">
+            <h1 class="titulo">Picada</h1>
+            <form id="myForm" class="texto2">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre"/>
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email"/>
+                <br>
+                <br>
+                <label for="msj">Mensaje:</label>
+                <textarea id="msj" rows="4" cols="58"></textarea>
+                <br>
+                <br>
+                <label for="test">Test</label>
+                <input type="range" id="test" min="0" max="120" value="60">
+                <br>
+                <br>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+                <br>
+                <br>
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora">
+                <br>
+                <br>
+                <label for="mes">Mes</label>
+                <input type="month" id="mes">
+                <br>
+                <br>
+                <label for="week">Semana:</label>
+                <input type="week" id="week">
+                <br>
+                <br>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="genero" id="masc" value="masc">
+                <label for="fem">Femenino</label>
+                <input type="radio" name="genero" id="fem" value="fem">
+                <br>
+                <br>
+                <select name="country" multiple>
+                    <option value="">select a country</option>
+                    <option value="arg">Argentina</option>
+                    <option value="br">Brasil</option>
+                </select>
+                <input type="button" value="Click Me" onclick="alert('El que me lee es gay')">
+                <input type="submit">
+            </form>
+            <script>
+                document.getElementById("myForm").addEventListener("submit", function(event)
+                {
+                    event.preventDefault();
+                    const name = document.getElementById("nombre").value;
+                    alert("Abduzcan" + name);
+                });
+            </script>
+        </div>
+    </body>
