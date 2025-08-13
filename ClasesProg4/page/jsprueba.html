@@ -1,0 +1,59 @@
+<html>
+    <body>
+        <script>
+            /*alert("Hola Mundo");*/
+            console.log("Hola Mundo");
+            let c = 0;
+            c = c + 1;
+            const d = "Casa";
+            console.log("Tipo de c: " + typeof c);
+            console.log(typeof {a: 1})
+            console.log(2 ** 3); /*2 a la potencia de 3*/
+            if(3=="3") /*Castea*/
+            {
+                console.log("Iguales");
+            }
+            if(3===3) /*No Castea*/
+            {
+                console.log("Iguales");
+            }
+            if( 1 !== "1") /*No Castea*/
+            {
+                console.log("Distintos");
+            }
+            else
+            {
+                console.log("Iguales");
+            }
+            let a = c === d ? "Iguales" : "Distintos";
+            console.log(a);
+            let b = "a";
+            switch(b)
+            {
+                case "a":
+                    console.log("es a");
+                    break;
+                case "b":
+                    console.log("es b");
+                    break;
+                default:
+                    console.log("es c");
+            }
+            function add(x,y)
+            {
+                return x + y;
+            }
+            substraction = function(x,y){ return x - y}
+            inc = x => x + 1;
+            console.log(add(3,5));
+            const f = {name: "Pablo", age: 35, add: (x,y) => x + y};
+            console.log(f.add(2,2));
+            let nums = [1,2,3];
+            nums = nums.map(x => x * 2);
+            for (let n of nums)
+            {
+                console.log(n);
+            }
+        </script>
+    </body>
+</html>
